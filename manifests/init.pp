@@ -1,9 +1,9 @@
 class jenkins($version = 'installed') {
-  package {
-    'jre':
-        ensure => '1.7.0',
-        noop   => true
-  }
+  #package {
+  #  'jre':
+  #      ensure => '1.7.0',
+  #      noop   => true
+  #}
   include jenkins::repo
   class {
     'jenkins::package':
